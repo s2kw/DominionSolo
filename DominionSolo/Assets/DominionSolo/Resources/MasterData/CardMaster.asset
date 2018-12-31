@@ -20,4 +20,13 @@ MonoBehaviour:
     cost: 0
     cursePoint: 3
     victoryPoint: 1
+    expType: 0
+  - id: 1
+    name: "\u30B5\u30F3\u30D7\u30EB\uFF12"
+    addAction: 0
+    addPurchase: 0
+    addPrice: 0
+    cost: 1
+    cursePoint: 0
+    victoryPoint: 0
     expType: 1

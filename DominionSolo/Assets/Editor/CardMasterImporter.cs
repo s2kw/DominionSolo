@@ -92,7 +92,7 @@ namespace Tools{
 
             foreach( var row in rowList )
             {
-                CardDefine.ExpantionType expType = ( CardDefine.ExpantionType )System.Enum.Parse(typeof(CardDefine.ExpantionType), row.GetCellString( dataIndexDict["victoryPoint"] ));
+                CardDefine.ExpantionType expType = ( CardDefine.ExpantionType )System.Enum.Parse(typeof(CardDefine.ExpantionType), row.GetCellString( dataIndexDict["kind"] ));
                 var data = new CardMaster.CardData(
                         id: row.GetCellInt( dataIndexDict["id"] ),
                         name: row.GetCellString( dataIndexDict["name"] ),
