@@ -28,9 +28,25 @@ public static class CardDefine {
     /// </summary>
     public enum CardType
     {
+        改築,
+        玉座の間,
+        密偵,
+        鍛冶屋,
+        民兵,
+        金貸し,
+        祝宴,
+        泥棒,
+        役人,
+
+
+
 
     }
-
+    public enum ExpantionType
+    {
+        ドミニオン = 0,
+        陰謀,
+    }
 
 }
 
