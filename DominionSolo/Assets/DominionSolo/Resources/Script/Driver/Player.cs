@@ -7,8 +7,8 @@
 
 Player.cs
 
-Date:
-Description:
+Date:2019/01/02
+Description:プレイヤー単体の概念
 
 -------------------------------------------------*/
 
@@ -29,16 +29,32 @@ using UnityEditor;
 // namespace jigaX{
 public class Player : MonoBehaviour {
 
-	void Awake(){}
+    public bool isFinish { get; private set; }
 
-	// Use this for initialization
-	void Start () {}
 
-	// Update is called once per frame
-	void Update () {}
+    /// ターン開始
+    public void OnStartTurn() {
+        isFinish = false;
+    }
 
-# if UNITY_EDITOR
-	[CustomEditor( typeof( Player ) )]
+    /// ターン終了
+    public void OnFinishTurn()
+    {
+
+
+        isFinish = true;
+    }
+
+    /// <summary>
+    /// 他プレイヤーに攻撃された時
+    /// </summary>
+    public void OnAttacked()
+    {
+        // 
+    }
+
+#if UNITY_EDITOR
+    [CustomEditor( typeof( Player ) )]
 	public class PlayerInspector : Editor{
 		public override void OnInspectorGUI()
 		{
